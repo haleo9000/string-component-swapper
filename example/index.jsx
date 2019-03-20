@@ -30,3 +30,5 @@ class App extends React.Component {
     </Showcase>
   }
 }
+
+ReactDOM.render(<App />, document.getElementById('root'));
