@@ -25,7 +25,7 @@ class App extends React.Component {
       <StringSwapper 
         incoming={"This is a string with a magic mega-guid in it that we want to obfuscate a little bit. Mega-guid: GUID_b1f8ee218b2a4af18a7aea5c40bbcbf495b293ac65af48ef822518de4fc7169959871711f32a48dbb9811c2727b92b05. After the mega-guid, we have some more information."}
         componentFunction={this.handleGuidComponent}
-        matchingTuple={[/GUID[0-9a-f.]/), /[,:;-.][ ]|[ ]|[ ][-][ ] /]}
+        matchingTuple={[/GUID[0-9a-f.]/, /[,:;/-/.][ ]|[ ]|[ ][-][ ] /]}
       />
     </Showcase>
   }
